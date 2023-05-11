@@ -1,7 +1,8 @@
-import React from 'react'
+import { Stack } from '@mui/material'
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
     return (
-        <div>Navbar</div>
+        <p>nav</p>
     )
 }
