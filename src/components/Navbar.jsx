@@ -22,7 +22,7 @@ export default function Navbar() {
                     alignItems: 'center'
                 }}
             >
-                <img src={logo} alt="logo" height={40} />
+                <img src={logo} alt="logo" height={65} style={{ marginLeft: '20px' }} />
             </Link>
             <SearchBar />
         </Stack>
