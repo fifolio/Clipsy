@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Box, Stack, Typography } from '@mui/material'
-import {Sidebar} from './index'
+import { Sidebar, Videos } from './index'
+
 
 export default function Feed() {
     return (
@@ -26,6 +27,37 @@ export default function Feed() {
                     Made with 💙 by <a href="https://github.com/fifolio" target="_blank">fifolio</a>
                 </Typography>
             </Box>
-        </Stack>
+
+            <Box
+                mt={'-10px'}
+                p={2}
+                sx={{
+                    overflowY: 'auto',
+                    height: '92vh',
+                    flex: 2
+                }}
+            >
+                <Typography
+                    variant="h4"
+                    fontWeight="bold"
+                    mb={2}
+                    sx={{
+                        color: '#2d3436'
+                    }}
+                >
+                    New
+                    <span
+                        style={{
+                            marginLeft: '8px',
+                            color: '#00cec9'
+                        }}
+                    >
+                        clips
+                    </span>
+                </Typography>
+
+                <Videos />
+            </Box>
+        </Stack >
     )
 }
