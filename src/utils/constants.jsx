@@ -15,11 +15,11 @@ import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
 export const logo = 'https://www.vuclip.com/wp-content/uploads/2019/08/logo2.png';
 
 export const categories = [
-    { name: 'New', icon: <HomeIcon />, },
-    { name: 'JS Mastery', icon: <CodeIcon />, },
-    { name: 'Coding', icon: <CodeIcon />, },
-    { name: 'ReactJS', icon: <CodeIcon />, },
-    { name: 'NextJS', icon: <CodeIcon />, },
+    { name: 'Home', icon: <HomeIcon />, },
+    // { name: 'JS Mastery', icon: <CodeIcon />, },
+    // { name: 'Coding', icon: <CodeIcon />, },
+    // { name: 'ReactJS', icon: <CodeIcon />, },
+    // { name: 'NextJS', icon: <CodeIcon />, },
     { name: 'Music', icon: <MusicNoteIcon /> },
     { name: 'Education', icon: <SchoolIcon />, },
     { name: 'Podcast', icon: <GraphicEqIcon />, },
