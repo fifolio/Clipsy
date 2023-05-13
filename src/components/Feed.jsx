@@ -2,10 +2,19 @@ import { useState, useEffect } from 'react'
 // import axios from 'axios'
 import { Box, Stack, Typography } from '@mui/material'
 import { Sidebar, Videos } from './index'
-
-
+import { fetchFromApi } from '../utils/FetchFromApi'
 
 export default function Feed() {
+
+    const [selectedCategory, setSelectedCategory] = useState('New')
+    const [videos, setVideos] = useState([])
+
+    useEffect(() => {
+        fetchFromApi(`search?part=snippet&q=${selectedCategory}`)
+            .then((data) => setVideos(data.items))
+
+    }, [selectedCategory])
+
     return (
         <Stack
             sx={{
@@ -17,7 +26,10 @@ export default function Feed() {
                 borderRight: '1px solid #E2E2E2',
                 px: { sx: 0, md: 2 }
             }}>
-                <Sidebar />
+                <Sidebar
+                    selectedCategory={selectedCategory}
+                    setSelectedCategory={setSelectedCategory}
+                />
                 <Typography
                     className="copyright"
                     variant="body2"
@@ -47,7 +59,7 @@ export default function Feed() {
                         color: '#2d3436'
                     }}
                 >
-                    New
+                    {selectedCategory}
                     <span
                         style={{
                             marginLeft: '8px',
@@ -58,7 +70,7 @@ export default function Feed() {
                     </span>
                 </Typography>
 
-                <Videos videos={[]} />
+                <Videos videos={videos} />
             </Box>
         </Stack >
     )
