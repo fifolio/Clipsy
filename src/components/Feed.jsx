@@ -51,7 +51,7 @@ export default function Feed() {
                     flex: 2
                 }}
             >
-                <Typography
+                {/* <Typography
                     variant="h4"
                     fontWeight="bold"
                     mb={2}
@@ -68,7 +68,7 @@ export default function Feed() {
                     >
                         clips
                     </span>
-                </Typography>
+                </Typography> */}
 
                 <Videos videos={videos} />
             </Box>
