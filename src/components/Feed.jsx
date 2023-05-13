@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
+// import axios from 'axios'
 import { Box, Stack, Typography } from '@mui/material'
 import { Sidebar, Videos } from './index'
+
 
 
 export default function Feed() {
@@ -56,7 +58,7 @@ export default function Feed() {
                     </span>
                 </Typography>
 
-                <Videos />
+                <Videos videos={[]} />
             </Box>
         </Stack >
     )
