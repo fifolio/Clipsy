@@ -10,10 +10,17 @@ export default function Videos({ videos }) {
             justifyContent="center"
             gap={2}
         >
+            {/* <div style={{ display: 'block', width: '100%' }}>
+                {videos.map((item, index) => (
+                    <Box key={index}>
+                        {item.id.channelId && <ChannelCard channelDetail={item} />}
+                    </Box>
+                ))}
+            </div> */}
+
             {videos.map((item, index) => (
                 <Box key={index}>
                     {item.id.videoId && <VideoCard video={item} />}
-                    {item.id.channelId && <ChannelCard channelDetail={item} />}
                 </Box>
             ))}
         </Stack>
