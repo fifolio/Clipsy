@@ -25,8 +25,8 @@ export default function VideoCard({
         <Card
             sx={{
                 width: {
-                    md: '350px',
-                    xs: '100%'
+                    xs: '100%',
+                    md: '350px'
                 }
             }}>
             <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
