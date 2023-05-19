@@ -10,9 +10,11 @@ export default function Navbar() {
             alignItems="center"
             p={2}
             sx={{
+                zIndex: 1,
                 position: 'sticky',
                 top: '0',
-                justifyContent: 'space-between'
+                justifyContent: 'space-between',
+                background: '#FAFAFA'
             }}
         >
             <Link

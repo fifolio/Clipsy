@@ -26,6 +26,7 @@ export default function VideoCard({
             sx={{
                 width: {
                     xs: '100%',
+                    sm: '358px',
                     md: '350px'
                 }
             }}>
@@ -34,7 +35,12 @@ export default function VideoCard({
                     image={snippet?.thumbnails?.high?.url}
                     alt={snippet?.title}
                     sx={{
-                        width: 358,
+                        width: {
+                            sx: "100%",
+                            sm: '358px',
+                            md: '320px',
+                            lg: '100%'
+                        },
                         height: 180
                     }}
                 />

@@ -43,9 +43,13 @@ export default function VideoDetail() {
                 <Box
                     flex={1}
                     sx={{
-                        width: '100%',
-                        position: 'sticky',
-                        top: '86px'
+                        width: {
+                            sm: '100%',
+                            md: '100%',
+                            lg: '900px'
+                        },
+                        position: 'relative',
+                        top: '9px',
                     }}
                 >
                     <ReactPlayer
