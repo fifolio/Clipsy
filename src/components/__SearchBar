@@ -32,6 +32,13 @@ export default function SearchBar() {
             }}
         >
             <input
+                style={{
+                    width: {
+                        xs: '40px',
+                        sm: '40px',
+                        lg: '100px'
+                    }
+                }}
                 className="search-bar"
                 placeholder="Search..."
                 value={searchTerm}

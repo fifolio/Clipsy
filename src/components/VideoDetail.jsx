@@ -38,7 +38,7 @@ export default function VideoDetail() {
     } = videoDetails;
 
     return (
-        <Box minHeight="95vh">
+        <Box minHeight="95vh" mt={'70px'}>
             <Stack direction={{ xs: 'column', md: 'row' }}>
                 <Box
                     flex={1}
@@ -46,10 +46,7 @@ export default function VideoDetail() {
                         width: {
                             sm: '100%',
                             md: '100%',
-                            lg: '900px'
-                        },
-                        position: 'relative',
-                        top: '9px',
+                        }
                     }}
                 >
                     <ReactPlayer

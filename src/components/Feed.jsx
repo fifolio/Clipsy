@@ -18,7 +18,12 @@ export default function Feed() {
     return (
         <Stack
             sx={{
-                flexDirection: { sx: "column", md: "row" },
+                flexDirection: {
+                    sx: "column",
+                    md: "row",
+                },
+                marginTop: '60px',
+                paddingTop: '15px'
             }}
         >
             <Box sx={{

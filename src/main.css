@@ -38,6 +38,7 @@ a {
   height: 77vh !important;
   width: 98% !important;
   margin-left: 15px;
+  margin-top: 9px;
 }
 
 .search-bar{
@@ -84,6 +85,6 @@ a {
     height: 45vh !important;
   }
   .search-bar{
-    width:200px;
+    /* width:100px; */
   }
 }

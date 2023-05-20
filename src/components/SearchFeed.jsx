@@ -17,13 +17,14 @@ export default function SearchFeed() {
 
     return (
         <Box
-            mt={'-10px'}
+            mt={'65px'}
             p={2}
             sx={{
                 overflowY: 'auto',
                 height: '92vh',
                 flex: 2
-            }}
+            }
+            }
         >
             {/* <Typography
                     variant="h4"
@@ -44,7 +45,7 @@ export default function SearchFeed() {
                     </span>
                 </Typography> */}
 
-            <Videos videos={videos} />
-        </Box>
+            < Videos videos={videos} />
+        </Box >
     )
 }
