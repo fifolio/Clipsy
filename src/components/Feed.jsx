@@ -27,15 +27,15 @@ export default function Feed() {
             }}
         >
             <Box sx={{
-                height: { sx: 'auto', md: '92vh' },
+                height: { sx: 'auto', md: '100%' },
                 borderRight: '1px solid #E2E2E2',
-                px: { sx: 0, md: 2 }
+                // px: { sx: 0, md: 2 }
             }}>
                 <Sidebar
                     selectedCategory={selectedCategory}
                     setSelectedCategory={setSelectedCategory}
                 />
-                <Typography
+                {/* <Typography
                     className="copyright"
                     variant="body2"
                     sx={{
@@ -44,7 +44,7 @@ export default function Feed() {
                     }}
                 >
                     Made with 💙 by <a href="https://github.com/fifolio" target="_blank">fifolio</a>
-                </Typography>
+                </Typography> */}
             </Box>
 
             <Box
