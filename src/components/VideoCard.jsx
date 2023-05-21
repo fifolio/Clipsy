@@ -24,30 +24,21 @@ export default function VideoCard({
     return (
         <Card
             sx={{
-                width: {
-                    xs: '100%',
-                    sm: '358px',
-                    md: '350px'
-                }
+                width: '358px',
+                height: '290px'
             }}>
             <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
                 <CardMedia
                     image={snippet?.thumbnails?.high?.url}
                     alt={snippet?.title}
                     sx={{
-                        width: {
-                            sx: "100%",
-                            sm: '358px',
-                            md: '320px',
-                            lg: '100%'
-                        },
                         height: 180
                     }}
                 />
                 <CardContent
                     sx={{
                         background: 'white',
-                        height: '106px'
+                        height: '50px'
                     }}
                 >
                     <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
