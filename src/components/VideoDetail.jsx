@@ -5,7 +5,6 @@ import { Typography, Box, Stack } from '@mui/material'
 import { CheckCircle } from '@mui/icons-material'
 import { Videos } from '.'
 import { fetchFromApi } from '../utils/FetchFromApi'
-import Loading from './Loading'
 
 
 export default function VideoDetail() {
@@ -118,7 +117,6 @@ export default function VideoDetail() {
                     justifyContent="center"
                     alignItems="center"
                 >
-                    {/* {(!videoDetails?.snippet) ? (<Loading />) : ''} */}
                     <Videos videos={videos} direction="column" />
                 </Box>
             </Stack>

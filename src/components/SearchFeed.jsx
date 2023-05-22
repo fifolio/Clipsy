@@ -3,7 +3,6 @@ import { Box } from '@mui/material'
 import { Videos } from './index'
 import { fetchFromApi } from '../utils/FetchFromApi'
 import { useParams } from 'react-router-dom'
-import Loading from './Loading'
 
 export default function SearchFeed() {
 
@@ -27,7 +26,6 @@ export default function SearchFeed() {
             }
             }
         >
-            {(!videos) ? (<Loading />) : ''}
 
             <Videos videos={videos} />
         </Box >
