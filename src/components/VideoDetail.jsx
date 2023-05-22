@@ -43,10 +43,7 @@ export default function VideoDetail() {
                 <Box
                     flex={1}
                     sx={{
-                        width: {
-                            sm: '100%',
-                            md: '100%',
-                        }
+                        width: '96.5%',
                     }}
                 >
                     <ReactPlayer
@@ -89,6 +86,9 @@ export default function VideoDetail() {
                             direction="row"
                             gap="20px"
                             alignItems="center"
+                            style={{
+                                marginRight: '10px'
+                            }}
                         >
                             <Typography
                                 variant="body1"
@@ -113,6 +113,7 @@ export default function VideoDetail() {
                         md: 1,
                         xs: 5
                     }}
+                    display="flex"
                     justifyContent="center"
                     alignItems="center"
                 >
