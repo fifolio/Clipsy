@@ -1,6 +1,6 @@
 import { Stack, Box } from '@mui/material'
 import { VideoCard, ChannelCard } from './index'
-import Loading from '../utils/loading';
+import Loading from './Loading';
 
 export default function Videos({ videos, direction }) {
 
