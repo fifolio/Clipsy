@@ -1,9 +1,9 @@
 import { Stack, Box } from '@mui/material'
 import { VideoCard, ChannelCard } from './index'
+import Loading from '../utils/loading';
 
 export default function Videos({ videos, direction }) {
 
-    if (!videos?.length) return 'Loading...'
 
     return (
         <Stack
@@ -12,6 +12,10 @@ export default function Videos({ videos, direction }) {
             justifyContent="center"
             gap={2}
         >
+
+            {(!videos?.length) ? (<Loading />) : null}
+
+
             {/* <div style={{ display: 'block', width: '100%' }}>
                 {videos.map((item, index) => (
                     <Box key={index}>
@@ -25,6 +29,7 @@ export default function Videos({ videos, direction }) {
                     {item.id.videoId && <VideoCard video={item} />}
                 </Box>
             ))}
+
         </Stack>
     )
 }

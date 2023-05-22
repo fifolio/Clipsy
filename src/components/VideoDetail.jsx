@@ -5,6 +5,7 @@ import { Typography, Box, Stack } from '@mui/material'
 import { CheckCircle } from '@mui/icons-material'
 import { Videos } from '.'
 import { fetchFromApi } from '../utils/FetchFromApi'
+import Loading from '../utils/loading'
 
 
 export default function VideoDetail() {
@@ -23,7 +24,7 @@ export default function VideoDetail() {
             .then((data) => setVideos(data.items))
     }, [id])
 
-    if (!videoDetails?.snippet) return 'Loading ...';
+    if (!videoDetails?.snippet) return (<Loading />);
 
     const {
         snippet: {
@@ -61,14 +62,23 @@ export default function VideoDetail() {
                     <Stack
                         direction="row"
                         justifyContent="space-between"
+                        style={{
+                            textTransform: 'capitalize'
+                        }}
                     >
-                        <Link to={`/channel/${channelId}`}>
+                        <Link to={`/channel/${channelId}`}
+                        >
                             <Typography
                                 variant={{
                                     sm: 'subtitle1',
-                                    md: 'h6'
+                                    md: 'h6',
                                 }}
                                 sx={{
+                                    background: 'white',
+                                    boxShadow: '0px 3px 5px rgba(0,0,0, .25)',
+                                    padding: '10px',
+                                    borderRadius: '15px',
+                                    fontWeight: 'bold',
                                     ml: '15px'
                                 }}
                             >
