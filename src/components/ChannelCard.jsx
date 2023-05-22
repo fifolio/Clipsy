@@ -23,10 +23,11 @@ export default function ChannelCard({ channelDetail }) {
                         alt={channelDetail?.snippet?.title}
                         sx={{
                             borderRadius: '100%',
-                            maxWidth: { xs: '356px', md: '200px' },
-                            height: '200px',
-                            mt: 5,
-                            // mb: 1,
+                            width: '150px',
+                            height: '150px',
+                            mx: 'auto',
+                            mt: 9,
+                            mb: 1,
                             // border: '1px solid #e3e3e3'
                         }}
                     />
