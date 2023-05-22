@@ -12,6 +12,7 @@ export default function ChannelCard({ channelDetail }) {
                 margin: 'auto',
                 justifyContent: 'center',
                 height: '325px',
+                background: 'white'
             }}
         >
 
@@ -21,15 +22,21 @@ export default function ChannelCard({ channelDetail }) {
                         image={channelDetail?.snippet?.thumbnails?.high?.url || demoProfilePicture}
                         alt={channelDetail?.snippet?.title}
                         sx={{
-                            borderRadius: '50%',
+                            borderRadius: '100%',
                             maxWidth: { xs: '356px', md: '200px' },
                             height: '200px',
-                            mb: 2,
-                            border: '1px solid #e3e3e3'
+                            mt: 5,
+                            // mb: 1,
+                            // border: '1px solid #e3e3e3'
                         }}
                     />
 
-                    <Typography variant="h6">
+                    <Typography
+                        variant="h6"
+                        style={{
+                            textAlign: 'center'
+                        }}
+                    >
                         {channelDetail?.snippet?.title}
                         <CheckCircle
                             sx={{
