@@ -15,10 +15,10 @@ npm install
 <p class="has-line-data" data-line-start="24" data-line-end="25">Once the app is running, you can start contibute. See the <strong>Features</strong> section below for more information on what you can do with Clipsy.</p>
 <h2 class="code-line" data-line-start=26 data-line-end=27 ><a id="Features_26"></a>Features</h2>
 <ul>
-<li class="has-line-data" data-line-start="27" data-line-end="28">Use the Search Input to find clips based on your teast!</li>
-<li class="has-line-data" data-line-start="28" data-line-end="29">Chose you favorite clips category from the Sidebar</li>
-<li class="has-line-data" data-line-start="29" data-line-end="30">Get all the related clips automatily while you watching</li>
-<li class="has-line-data" data-line-start="30" data-line-end="33">Get in Channels page for more</li>
+<li class="has-line-data" data-line-start="27" data-line-end="28">Search and find clips based on your taste! </li>
+<li class="has-line-data" data-line-start="28" data-line-end="29">Choose your favorite clips category from the Sidebar</li>
+<li class="has-line-data" data-line-start="29" data-line-end="30">Get all the related clips automatically while you watching</li>
+<li class="has-line-data" data-line-start="30" data-line-end="33">Jump to the Channels page for more</li>
 </ul>
 <h2 class="code-line" data-line-start=33 data-line-end=34 ><a id="Technologies_Used_33"></a>Technologies Used</h2>
 <p class="has-line-data" data-line-start="34" data-line-end="35">Clipsy is built using the following technologies:</p>
