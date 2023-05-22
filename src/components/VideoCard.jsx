@@ -51,7 +51,7 @@ export default function VideoCard({
                         </Typography>
                     </Link>
 
-                    <Link to={snippet?.channelId ? `/channel/${videoId}` : demoChannelUrl}>
+                    <Typography>
                         <Typography
                             variant="subtitle2"
                             fontWeight="bold"
@@ -67,7 +67,7 @@ export default function VideoCard({
                                 }}
                             />
                         </Typography>
-                    </Link>
+                    </Typography>
                 </CardContent>
             </Link>
         </Card>
