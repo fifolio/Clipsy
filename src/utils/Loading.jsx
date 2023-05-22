@@ -5,14 +5,16 @@ export default function Loading() {
         <div
             style={{
                 background: 'white',
-                textAlign: 'center',
+                // textAlign: 'center',
                 width: '100%',
                 height: '100%',
                 marginTop: '100px',
                 padding: '0'
             }}
         >
-            <img src={loading} width="100px" />
+            <center>
+                <img src={loading} width="100px" />
+            </center>
         </div>
     )
 }

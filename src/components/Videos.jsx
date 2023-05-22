@@ -13,7 +13,7 @@ export default function Videos({ videos, direction }) {
             gap={2}
         >
 
-            {(!videos?.length) ? (<Loading />) : null}
+            {(!videos?.length) ? (<Loading />) : ''}
 
 
             {/* <div style={{ display: 'block', width: '100%' }}>

@@ -138,10 +138,10 @@ export default function Navbar() {
                             }}
                         >
                             <MenuItem>
-                                <a href="/" textAlign="center">Home</a>
+                                <a href="/">Home</a>
                             </MenuItem>
                             <MenuItem>
-                                <a href="https://github.com/fifolio/Clipsy" target="_blank" textAlign="center">Github Repo</a>
+                                <a href="https://github.com/fifolio/Clipsy" target="_blank">Github Repo</a>
                             </MenuItem>
                         </Menu>
                     </Box>
