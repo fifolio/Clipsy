@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import { Box, Stack, Typography } from '@mui/material'
 import { Sidebar, Videos } from './index'
 import { fetchFromApi } from '../utils/FetchFromApi'
+import Loading from './Loading'
 
 export default function Feed() {
 
@@ -75,6 +76,7 @@ export default function Feed() {
                     </span>
                 </Typography> */}
 
+                {(!videos) ? <Loading /> : ''}
                 <Videos videos={videos} />
             </Box>
         </Stack >

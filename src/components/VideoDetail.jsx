@@ -24,22 +24,14 @@ export default function VideoDetail() {
             .then((data) => setVideos(data.items))
     }, [id])
 
-    if (!videoDetails?.snippet) return (<Loading />);
+    if (!videoDetails?.snippet) return 'Loading ...';
 
-    const {
-        snippet: {
-            title,
-            channelId,
-            channelTitle,
-        },
-        statistics: {
-            viewCount,
-            likeCount
-        }
-    } = videoDetails;
+    const { snippet: { title, channelId, channelTitle }, statistics: { viewCount, likeCount } } = videoDetails;
+
 
     return (
         <Box minHeight="95vh" mt={'70px'}>
+
             <Stack direction={{ xs: 'column', md: 'row' }}>
                 <Box
                     flex={1}
@@ -66,8 +58,7 @@ export default function VideoDetail() {
                             textTransform: 'capitalize'
                         }}
                     >
-                        <Link to={`/channel/${channelId}`}
-                        >
+                        <Link to={`/channel/${channelId}`}>
                             <Typography
                                 variant={{
                                     sm: 'subtitle1',
@@ -127,6 +118,7 @@ export default function VideoDetail() {
                     justifyContent="center"
                     alignItems="center"
                 >
+                    {/* {(!videoDetails?.snippet) ? (<Loading />) : ''} */}
                     <Videos videos={videos} direction="column" />
                 </Box>
             </Stack>

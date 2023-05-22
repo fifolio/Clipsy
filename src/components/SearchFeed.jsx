@@ -3,6 +3,7 @@ import { Box } from '@mui/material'
 import { Videos } from './index'
 import { fetchFromApi } from '../utils/FetchFromApi'
 import { useParams } from 'react-router-dom'
+import Loading from './Loading'
 
 export default function SearchFeed() {
 
@@ -26,26 +27,9 @@ export default function SearchFeed() {
             }
             }
         >
-            {/* <Typography
-                    variant="h4"
-                    fontWeight="bold"
-                    mb={2}
-                    sx={{
-                        color: '#2d3436'
-                    }}
-                >
-                    {selectedCategory}
-                    <span
-                        style={{
-                            marginLeft: '8px',
-                            color: '#00cec9'
-                        }}
-                    >
-                        clips
-                    </span>
-                </Typography> */}
+            {(!videos) ? (<Loading />) : ''}
 
-            < Videos videos={videos} />
+            <Videos videos={videos} />
         </Box >
     )
 }
