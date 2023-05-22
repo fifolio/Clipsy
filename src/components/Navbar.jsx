@@ -93,8 +93,8 @@ export default function Navbar() {
                     <Typography
                         variant="h6"
                         noWrap
-                        component="a"
-                        href="/"
+                        // component="a"
+                        // href="http://localhost:5173"
                         sx={{
                             mr: 2,
                             display: { xs: 'none', md: 'flex' },
@@ -138,6 +138,9 @@ export default function Navbar() {
                             }}
                         >
                             <MenuItem>
+                                <a href="/" textAlign="center">Home</a>
+                            </MenuItem>
+                            <MenuItem>
                                 <a href="https://github.com/fifolio/Clipsy" target="_blank" textAlign="center">Github Repo</a>
                             </MenuItem>
                         </Menu>
@@ -161,6 +164,12 @@ export default function Navbar() {
                         <img src={logo} alt="logo" width="70" />
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                        <Button href="/"
+                            sx={{ my: 2, color: 'black', display: 'block', textTransform: 'none' }}
+                        >
+                            Home
+                        </Button>
+
                         <Button href="https://github.com/fifolio/Clipsy" target="_blank"
                             sx={{ my: 2, color: 'black', display: 'block', textTransform: 'none' }}
                         >
