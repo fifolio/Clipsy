@@ -1,4 +1,4 @@
-import loading from '../assets/loading.gif'
+const loading = 'https://cdn.pixabay.com/animation/2022/10/11/03/16/03-16-39-160_512.gif';
 
 export default function Loading() {
     return (
