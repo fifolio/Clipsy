@@ -1,4 +1,4 @@
-<p class="has-line-data" data-line-start="3" data-line-end="4"><img width="100%" height="100%" src="https://gcdnb.pbrd.co/images/Vz9b2l63cSvM.png?o=1" alt="N|Solid"></p>
+<p class="has-line-data" data-line-start="3" data-line-end="4"><img width="100%" height="100%" src="https://raw.githubusercontent.com/fifolio/Clipsy/8d4bff548649f7f39959a13a81a05199e12e0da0/public/imgs/jv.PNG" alt="Clipsy"></p>
 <p class="has-line-data" data-line-start="5" data-line-end="6">Clipsy is a responsive modern and clean-looking web app for streaming clips, built with React, vite, and MUI, consisting of stunning video sections, custom categories, and channel pages, and, most importantly, you can even search for videos directly from Youtube!.</p>
 
 <h2 class="code-line" data-line-start=7 data-line-end=8 ><a id="Installation_7"></a>Installation</h2>
